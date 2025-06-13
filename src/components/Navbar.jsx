@@ -12,8 +12,9 @@ const Navbar = () => {
           <div>
             <h3 className="shopzone-title">Glamora</h3>
             <p className="shopzone-description">
-              Your premier destination for quality products and exceptional
-              shopping experiences. We bring you the best from around the world.
+              Your premier destination for premium beauty products. Discover
+              cruelty-free makeup, skincare, and fragrances that enhance your
+              natural beauty.
             </p>
             <div className="social-links">
               <a href="#" className="social-link">
@@ -36,10 +37,10 @@ const Navbar = () => {
                 <a href="#">About Us</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#">Beauty Blog</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="#">Makeup Tips</a>
               </li>
               <li>
                 <a href="#">Shipping Info</a>
@@ -55,19 +56,19 @@ const Navbar = () => {
             <h3 className="section-titles">Categories</h3>
             <ul className="link-list">
               <li>
-                <a href="#">Electronics</a>
+                <a href="#">Face Makeup</a>
               </li>
               <li>
-                <a href="#">Fashion</a>
+                <a href="#">Eye Makeup</a>
               </li>
               <li>
-                <a href="#">Home & Garden</a>
+                <a href="#">Lip Products</a>
               </li>
               <li>
-                <a href="#">Sports</a>
+                <a href="#">Skincare</a>
               </li>
               <li>
-                <a href="#">Beauty</a>
+                <a href="#">Fragrances</a>
               </li>
             </ul>
           </div>
@@ -78,7 +79,7 @@ const Navbar = () => {
             <ul>
               <li className="contact-item">
                 <MdEmail size={20} className="contact-icon" />
-                <span>hello@glamora.com</span>
+                <span>beauty@glamora.com</span>
               </li>
               <li className="contact-item">
                 <MdPhone size={20} className="contact-icon" />
@@ -86,7 +87,7 @@ const Navbar = () => {
               </li>
               <li className="contact-item">
                 <MdLocationOn size={20} className="contact-icon" />
-                <span>123 Commerce St, City, State</span>
+                <span>123 Beauty Street, City, State</span>
               </li>
             </ul>
           </div>
@@ -94,8 +95,8 @@ const Navbar = () => {
 
         <div className="copyright-section">
           <p>
-            © 2024 Glamora. All rights reserved. Made with{" "}
-            <span className="heart-icon">❤️</span> for amazing customers.
+            © 2024 Glamora Beauty. All rights reserved. Made with{" "}
+            <span className="heart-icon">❤️</span> for beauty enthusiasts.
           </p>
         </div>
       </div>
