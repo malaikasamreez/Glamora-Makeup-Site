@@ -24,6 +24,13 @@ function Cart() {
   };
 
   const handlePurchase = () => {
+    // Show order confirmation alert
+    alert(
+      `Your order of $${getCartTotal().toFixed(
+        2
+      )} has been confirmed and will be delivered to you shortly!`
+    );
+
     // Here you would typically send the order to your backend
     console.log("Order details:", {
       items: cartItems,
