@@ -1,0 +1,115 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Header from "./components/Header";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import HomePage from "./pages/HomePage";
+import Categories from "./pages/Categories";
+import "./App.css";
+import Products from "./pages/Products";
+import Navbar from "./components/Navbar";
+import Cart from "./pages/Cart";
+import { CartProvider } from "./context/CartContext";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AdminPanel from "./components/AdminPanel";
+
+function App() {
+  const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
+  const isAdmin = localStorage.getItem("isAdmin") === "true";
+
+  return (
+    <CartProvider>
+      <Router>
+        <div className="min-h-screen bg-gray-50">
+          <Header />
+          <main>
+            <Routes>
+              {/* Public Routes */}
+              <Route
+                path="/login"
+                element={
+                  isAuthenticated ? (
+                    isAdmin ? (
+                      <Navigate to="/admin" replace />
+                    ) : (
+                      <Navigate to="/" replace />
+                    )
+                  ) : (
+                    <Login />
+                  )
+                }
+              />
+              <Route
+                path="/signup"
+                element={
+                  isAuthenticated ? (
+                    isAdmin ? (
+                      <Navigate to="/admin" replace />
+                    ) : (
+                      <Navigate to="/" replace />
+                    )
+                  ) : (
+                    <Signup />
+                  )
+                }
+              />
+
+              {/* Admin Route */}
+              <Route
+                path="/admin"
+                element={
+                  isAuthenticated && isAdmin ? (
+                    <AdminPanel />
+                  ) : (
+                    <Navigate to="/login" replace />
+                  )
+                }
+              />
+
+              {/* Protected Routes */}
+              <Route
+                path="/"
+                element={
+                  <ProtectedRoute>
+                    <HomePage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/products"
+                element={
+                  <ProtectedRoute>
+                    <Products />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/categories"
+                element={
+                  <ProtectedRoute>
+                    <Categories />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/cart"
+                element={
+                  <ProtectedRoute>
+                    <Cart />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </main>
+          <Navbar />
+        </div>
+      </Router>
+    </CartProvider>
+  );
+}
+
+export default App;

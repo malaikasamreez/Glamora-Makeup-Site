@@ -1,0 +1,186 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Matte Liquid Foundation",
+      "price": 24.99,
+      "description": "Full coverage foundation with a matte finish",
+      "category": "Face Makeup",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 50
+    },
+    {
+      "id": "2",
+      "name": "Hydrating Concealer",
+      "price": 14.99,
+      "description": "Brightens under eyes and covers blemishes",
+      "category": "Face Makeup",
+      "categoryId": 1,
+      "image": "https://images.unsplash.com/photo-1656523201068-8ed449fb1434?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 40
+    },
+    {
+      "id": "3",
+      "name": "Waterproof Mascara",
+      "price": 12.99,
+      "description": "Long-lasting volume and curl",
+      "category": "Eye Makeup",
+      "categoryId": 2,
+      "image": "https://images.unsplash.com/photo-1631214540553-ff044a3ff1d4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 60
+    },
+    {
+      "id": "4",
+      "name": "Eyeshadow Palette - Nudes",
+      "price": 19.99,
+      "description": "12 neutral shades for everyday looks",
+      "category": "Eye Makeup",
+      "categoryId": 2,
+      "image": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 35
+    },
+    {
+      "id": "5",
+      "name": "Velvet Matte Lipstick",
+      "price": 9.99,
+      "description": "Long-lasting lipstick with rich pigment",
+      "category": "Lip Makeup",
+      "categoryId": 3,
+      "image": "https://images.unsplash.com/photo-1613255348289-1407e4f2f980?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 70
+    },
+    {
+      "id": "6",
+      "name": "Lip Gloss Trio Set",
+      "price": 15.99,
+      "description": "Glossy finish with shimmer and hydration",
+      "category": "Lip Makeup",
+      "categoryId": 3,
+      "image": "https://images.unsplash.com/photo-1631214524049-0ebbbe6d81aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 90
+    },
+    {
+      "id": "7",
+      "name": "Makeup Brush Set (10 pcs)",
+      "price": 29.99,
+      "description": "Professional brushes for all applications",
+      "category": "Makeup Tools",
+      "categoryId": 4,
+      "image": "https://images.unsplash.com/photo-1736753365978-0b5090f90095?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 45
+    },
+    {
+      "id": "8",
+      "name": "Beauty Blender Sponge Pack",
+      "price": 11.99,
+      "description": "Seamless blending for foundation and contour",
+      "category": "Makeup Tools",
+      "categoryId": 4,
+      "image": "https://images.unsplash.com/photo-1631214499995-468422da65d4?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 75
+    },
+    {
+      "id": "9",
+      "name": "Vitamin C Face Serum",
+      "price": 21.99,
+      "description": "Brightens skin and reduces fine lines",
+      "category": "Skincare Essentials",
+      "categoryId": 5,
+      "image": "https://images.unsplash.com/photo-1709495224788-47c4f0ee5868?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 55
+    },
+    {
+      "id": "10",
+      "name": "Hydrating Sheet Masks (Pack of 5)",
+      "price": 13.99,
+      "description": "Deeply nourishes and revitalizes skin",
+      "category": "Skincare Essentials",
+      "categoryId": 5,
+      "image": "https://images.unsplash.com/photo-1670201203150-bf8771401590?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 60
+    },
+    {
+      "id": "11",
+      "name": "Floral Eau de Parfum",
+      "price": 39.99,
+      "description": "Elegant and long-lasting fragrance",
+      "category": "Fragrances",
+      "categoryId": 6,
+      "image": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 30
+    },
+    {
+      "id": "12",
+      "name": "Vanilla Body Mist",
+      "price": 18.99,
+      "description": "Light and refreshing vanilla-scented mist",
+      "category": "Fragrances",
+      "categoryId": 6,
+      "image": "https://images.unsplash.com/photo-1673531156388-d1a5f9841b54?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 50
+    }
+  ],
+
+  "categories": [
+    {
+      "id": "1",
+      "name": "Face Makeup",
+      "description": "Foundations, concealers, primers, and setting powders",
+      "image": "https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
+    },
+    {
+      "id": "2",
+      "name": "Eye Makeup",
+      "description": "Eyeshadows, eyeliners, mascaras, and brow products",
+      "image": "https://images.unsplash.com/photo-1551392505-f4056032826e?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Lip Makeup",
+      "description": "Lipsticks, lip glosses, lip liners, and balms",
+      "image": "https://images.unsplash.com/photo-1709477542157-9c9249ca2cb6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4",
+      "name": "Makeup Tools",
+      "description": "Brushes, sponges, applicators, and tools",
+      "image": "https://images.unsplash.com/photo-1600228390270-970186129936?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "name": "Skincare Essentials",
+      "description": "Cleansers, moisturizers, serums, and masks",
+      "image": "https://images.unsplash.com/photo-1702261952303-581dd411cc54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6",
+      "name": "Fragrances",
+      "description": "Perfumes, body mists, and scented oils",
+      "image": "https://images.unsplash.com/photo-1557827999-c0bb00bbee13?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "user",
+      "email": "user@example.com",
+      "password": "pass123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "pass123",
+      "role": "admin"
+    },
+    {
+      "id": "5d2f",
+      "username": "Malaika",
+      "email": "malaika@gmail.com",
+      "password": "maha123",
+      "role": "user"
+    }
+  ]
+}

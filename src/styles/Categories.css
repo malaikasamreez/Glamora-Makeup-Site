@@ -1,0 +1,231 @@
+.categories-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+
+.categories-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.categories-subtitle {
+  font-size: 1.35rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 1rem;
+  perspective: 1000px;
+}
+
+.category-card {
+  position: relative;
+  height: 280px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  background: #22223b;
+}
+
+.category-card-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.category-overlay {
+  width: 100%;
+  padding: 2.5rem 2rem 2rem 2rem;
+  background: linear-gradient(
+    0deg,
+    rgba(17, 24, 39, 0.95) 0%,
+    rgba(17, 24, 39, 0.7) 50%,
+    rgba(17, 24, 39, 0.2) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  transform: translateZ(20px);
+  transition: all 0.3s ease;
+}
+
+.category-name {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transform: translateZ(30px);
+  transition: transform 0.3s ease;
+}
+
+.category-item-count {
+  color: #f1f5f9;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  transform: translateZ(25px);
+  transition: transform 0.3s ease;
+  opacity: 0.9;
+}
+
+.category-card:hover {
+  transform: translateY(-12px) scale(1.02) rotateX(5deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.category-card:hover .category-card-bg {
+  transform: scale(1.1);
+}
+
+.category-card:hover .category-name {
+  transform: translateZ(40px);
+}
+
+.category-card:hover .category-item-count {
+  transform: translateZ(35px);
+}
+
+.products-section {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.products-section .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .categories-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .categories-title {
+    font-size: 2.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .category-card {
+    height: 220px;
+  }
+
+  .category-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-container {
+    padding: 2rem 1rem;
+  }
+
+  .categories-title {
+    font-size: 2rem;
+  }
+
+  .categories-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .category-card {
+    height: 180px;
+    border-radius: 1rem;
+  }
+
+  .category-overlay {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .category-name {
+    font-size: 1.5rem;
+  }
+
+  .category-item-count {
+    font-size: 1rem;
+  }
+
+  .products-section {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .products-section .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .products-section .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
