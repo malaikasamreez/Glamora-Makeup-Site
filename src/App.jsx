@@ -62,15 +62,13 @@ function App() {
               <Route
                 path="/admin"
                 element={
-                  isAuthenticated && isAdmin ? (
+                  <ProtectedRoute requireAdmin={true}>
                     <AdminPanel />
-                  ) : (
-                    <Navigate to="/login" replace />
-                  )
+                  </ProtectedRoute>
                 }
               />
 
-              {/* Protected Routes */}
+              {/* Protected Routes (accessible by both users and admins) */}
               <Route
                 path="/"
                 element={
@@ -101,6 +99,18 @@ function App() {
                   <ProtectedRoute>
                     <Cart />
                   </ProtectedRoute>
+                }
+              />
+
+              {/* Catch all route - redirect to home if authenticated, login if not */}
+              <Route
+                path="*"
+                element={
+                  isAuthenticated ? (
+                    <Navigate to="/" replace />
+                  ) : (
+                    <Navigate to="/login" replace />
+                  )
                 }
               />
             </Routes>

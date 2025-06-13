@@ -3,7 +3,7 @@ import { ShoppingCartIcon, Cog6ToothIcon } from "@heroicons/react/24/outline";
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
 import "../styles/Header.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/glamoraLogo.png";
 
 export default function Header() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="navbar-grid">
           {/* ShopZone Section */}
           <div>
-            <h3 className="shopzone-title">ShopZone</h3>
+            <h3 className="shopzone-title">Glamora</h3>
             <p className="shopzone-description">
               Your premier destination for quality products and exceptional
               shopping experiences. We bring you the best from around the world.
@@ -78,7 +78,7 @@ const Navbar = () => {
             <ul>
               <li className="contact-item">
                 <MdEmail size={20} className="contact-icon" />
-                <span>hello@shopzone.com</span>
+                <span>hello@glamora.com</span>
               </li>
               <li className="contact-item">
                 <MdPhone size={20} className="contact-icon" />
@@ -94,7 +94,7 @@ const Navbar = () => {
 
         <div className="copyright-section">
           <p>
-            © 2024 ShopZone. All rights reserved. Made with{" "}
+            © 2024 Glamora. All rights reserved. Made with{" "}
             <span className="heart-icon">❤️</span> for amazing customers.
           </p>
         </div>
