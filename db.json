@@ -119,6 +119,46 @@
       "categoryId": 6,
       "image": "https://images.unsplash.com/photo-1673531156388-d1a5f9841b54?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "stock": 50
+    },
+    {
+      "id": "13",
+      "name": "Glossy Pink Nail Polish",
+      "price": 9.99,
+      "description": "Long-lasting glossy pink nail polish",
+      "category": "Nail Care",
+      "categoryId": 7,
+      "image": "https://images.unsplash.com/photo-1661531681444-f018a3b57092?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 100
+    },
+    {
+      "id": "14",
+      "name": "Manicure Kit",
+      "price": 15.49,
+      "description": "Essential tools for the perfect at-home manicure",
+      "category": "Nail Care",
+      "categoryId": 7,
+      "image": "https://images.unsplash.com/photo-1595320378041-72f4c1490773?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 75
+    },
+    {
+      "id": "15",
+      "name": "Keratin Repair Shampoo",
+      "price": 12.99,
+      "description": "Strengthens and nourishes damaged hair",
+      "category": "Hair Care",
+      "categoryId": 8,
+      "image": "https://images.unsplash.com/photo-1748462846797-c73395de15ff?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 60
+    },
+    {
+      "id": "16",
+      "name": "Hair Styling Brush",
+      "price": 10.99,
+      "description": "Detangles and styles hair effortlessly",
+      "category": "Hair Care",
+      "categoryId": 8,
+      "image": "https://images.unsplash.com/photo-1655210909079-633c5de482ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "stock": 85
     }
   ],
 
@@ -158,6 +198,18 @@
       "name": "Fragrances",
       "description": "Perfumes, body mists, and scented oils",
       "image": "https://images.unsplash.com/photo-1557827999-c0bb00bbee13?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "7",
+      "name": "Nail Care",
+      "description": "Nail polishes, manicure tools, and nail treatments",
+      "image": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "8",
+      "name": "Hair Care",
+      "description": "Shampoos, conditioners, hair masks, and styling tools",
+      "image": "https://images.unsplash.com/photo-1717160675332-1a8d1080ae3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "users": [

@@ -29,20 +29,20 @@
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   padding: 1rem;
   perspective: 1000px;
 }
 
 .category-card {
   position: relative;
-  height: 280px;
-  border-radius: 1.5rem;
+  height: 220px;
+  border-radius: 1.2rem;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
   background: #22223b;
 }
@@ -56,7 +56,7 @@
 
 .category-overlay {
   width: 100%;
-  padding: 2.5rem 2rem 2rem 2rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   background: linear-gradient(
     0deg,
     rgba(17, 24, 39, 0.95) 0%,
@@ -73,9 +73,9 @@
 
 .category-name {
   color: #fff;
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   transform: translateZ(30px);
   transition: transform 0.3s ease;
@@ -93,12 +93,12 @@
 }
 
 .category-card:hover {
-  transform: translateY(-12px) scale(1.02) rotateX(5deg);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
 .category-card:hover .category-card-bg {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .category-card:hover .category-name {
@@ -170,16 +170,16 @@
   }
 
   .categories-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
   }
 
   .category-card {
-    height: 220px;
+    height: 200px;
   }
 
   .category-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -198,16 +198,16 @@
   }
 
   .category-card {
-    height: 180px;
+    height: 160px;
     border-radius: 1rem;
   }
 
   .category-overlay {
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 1.2rem 1rem 1rem 1rem;
   }
 
   .category-name {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .category-item-count {
