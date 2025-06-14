@@ -69,14 +69,22 @@ const AdminPanel = () => {
     localStorage.removeItem("isAdmin");
     navigate("/login");
   };
+  function handleEdit() {
+    navigate("/admin/products");
+  }
 
   return (
     <div className="admin-panel">
       <div className="admin-header">
         <h1>Admin Panel</h1>
-        <button className="logout-button" onClick={handleLogout}>
-          Logout
-        </button>
+        <div className="button-container">
+          <button className="editsss-button" onClick={handleEdit}>
+            Edit Products
+          </button>
+          <button className="logout-button" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </div>
 
       <div className="create-product-section">

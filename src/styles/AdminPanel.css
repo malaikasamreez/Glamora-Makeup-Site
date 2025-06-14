@@ -21,6 +21,12 @@
   font-size: 24px;
 }
 
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .logout-button {
   background-color: #e74c3c;
   color: white;
@@ -30,10 +36,27 @@
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  margin: 0;
 }
 
 .logout-button:hover {
   background-color: #c0392b;
+}
+
+.editsss-button {
+  background-color: #15c01b;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin: 0;
+}
+
+.editsss-button:hover {
+  background-color: #077609;
 }
 
 .create-product-section {

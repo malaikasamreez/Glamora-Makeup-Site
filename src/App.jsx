@@ -16,6 +16,7 @@ import Cart from "./pages/Cart";
 import { CartProvider } from "./context/CartContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminPanel from "./components/AdminPanel";
+import ProductListing from "./pages/ProductListing";
 
 function App() {
   const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
@@ -58,12 +59,20 @@ function App() {
                 }
               />
 
-              {/* Admin Route */}
+              {/* Admin Routes */}
               <Route
                 path="/admin"
                 element={
                   <ProtectedRoute requireAdmin={true}>
                     <AdminPanel />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/admin/products"
+                element={
+                  <ProtectedRoute requireAdmin={true}>
+                    <ProductListing />
                   </ProtectedRoute>
                 }
               />
