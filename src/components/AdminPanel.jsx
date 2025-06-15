@@ -4,6 +4,7 @@ import "../styles/AdminPanel.css";
 
 const AdminPanel = () => {
   const navigate = useNavigate();
+  const [showNotification, setShowNotification] = useState(false);
   const [product, setProduct] = useState({
     name: "",
     price: 0,
@@ -37,16 +38,6 @@ const AdminPanel = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Reset form immediately
-    setProduct({
-      name: "",
-      price: 0,
-      description: "",
-      image: "",
-      categoryId: 0,
-      stock: 0,
-    });
-
     try {
       const response = await fetch("http://localhost:5000/products", {
         method: "POST",
@@ -57,7 +48,22 @@ const AdminPanel = () => {
       });
 
       if (response.ok) {
-        console.log("Product added successfully");
+        // Show notification
+        setShowNotification(true);
+        // Hide notification after 3 seconds
+        setTimeout(() => {
+          setShowNotification(false);
+        }, 3000);
+
+        // Reset form
+        setProduct({
+          name: "",
+          price: 0,
+          description: "",
+          image: "",
+          categoryId: 0,
+          stock: 0,
+        });
       }
     } catch (error) {
       console.error("Error adding product:", error);
@@ -75,6 +81,11 @@ const AdminPanel = () => {
 
   return (
     <div className="admin-panel">
+      {showNotification && (
+        <div className="notification success">
+          Product created successfully!
+        </div>
+      )}
       <div className="admin-header">
         <h1>Admin Panel</h1>
         <div className="button-container">
